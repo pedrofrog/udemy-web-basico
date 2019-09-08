@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/Pedro/Downloads/aula03-original%20(1).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Logica de Programação Javascript</title>
+        
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <button onclick="calcular(&#39;+&#39;)">+</button>
+        <button onclick="calcular(&#39;-&#39;)">-</button>
+        <button onclick="calcular(&#39;*&#39;)">*</button>
+        <button onclick="calcular(&#39;/&#39;)">/</button>
+        
+        <div id="output"></div>
+        
+        <script>
+            
+            var n1 = prompt('digite um numero');
+                        
+            escreve();
+            
+            function escreve(){
+                console.log('---------');
+                console.log(n1);
+            }
+            
+            
+            function calcular(simbolo){
+                var n = prompt('digite outro numero');
+                                
+                switch(simbolo){
+                    case '+':
+                        n1 = n1 + n;
+                        break;
+                    case '-':
+                        n1 = n1 - n;
+                        break;
+                    case '*':
+                        n1 = n1 * n;
+                        break;
+                    case '/':
+                        n1 = n1 / n;
+                }
+                
+                escreve();                
+            }
+            
+            
+            
+            
+        </script>
+    
+</body></html>

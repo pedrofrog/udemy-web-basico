@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/Pedro/Downloads/aula06-DOM-ex-6-desafio-final.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Curso Javascript Completo 2018</title>
+        
+        
+        <link href="file:///C:/Users/Pedro/Downloads/css/bootstrap.css" rel="stylesheet">
+        <link href="file:///C:/Users/Pedro/Downloads/css/bootstrap-theme.css" rel="stylesheet">
+        
+        <script src="file:///C:/Users/Pedro/Downloads/beluga.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Curso Javascript Completo 2018</h1>
+            
+            <p>0 - Essa pagina foi hackeada por Fulano</p>
+            <p>1 - Essa pagina foi hackeada por Fulano</p>
+            <p>2 - Essa pagina foi hackeada por Fulano</p>
+            <p>3 - Essa pagina foi hackeada por Fulano</p>
+            <p>4 - Essa pagina foi hackeada por Fulano</p>
+            <p>5 - Essa pagina foi hackeada por Fulano</p>
+            <p>6 - Essa pagina foi hackeada por Fulano</p>
+            <p>7 - Essa pagina foi hackeada por Fulano</p>
+            <p>8 - Essa pagina foi hackeada por Fulano</p>
+            <p>9 - Essa pagina foi hackeada por Fulano</p>
+        </div>
+        
+
+        <script>
+            
+            (function(){
+                'use strict';
+                
+                var paragrafos = document.querySelectorAll('p');
+                
+                console.log(paragrafos);
+                var x = 0;
+                while(paragrafos[x]){
+                    paragrafos[x].textContent = x + ' - Essa pagina foi hackeada por Fulano';
+                    x++;
+                }
+                
+                
+            })()
+            
+        </script>
+        
+    
+</body></html>
