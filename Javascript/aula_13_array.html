@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/Pedro/Downloads/aula02-original.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Curso Javascript Completo 2018</title>
+        
+        
+        <script>
+
+            var arr = ["1",1,2,3,4,5, "sadad", 2];
+
+           var soNumeros = arr.every(function (el, indice, obj){
+                
+                return typeof el === "number";
+            });
+            console.log(soNumeros)
+        
+            var aoMenosUmNumero = arr.some(function (el, indice, obj){
+                
+                return typeof el === "number";
+            });
+            console.log(aoMenosUmNumero);
+
+            var numeros = arr.filter(function(el, i, arr){
+                return typeof el === "number";
+            });
+            console.log(numeros);
+
+            arr.forEach(function(el, i, arr){
+                console.log("el-", el, " | i=", i, " | i -", arr.toString());
+            });
+
+            var posicaoStr1 = arr.indexOf(2);
+            console.log("posicaoStr1", posicaoStr1);
+
+            var posicaoStr2 = arr.lastIndexOf(2);
+            console.log("posicaoStr2", posicaoStr2);
+
+            console.log(numeros);
+           numeros = numeros.map(function(el, i, arr){
+                return el * i;
+            });
+            console.log(numeros);
+
+            var arr2 = arr.concat(numeros, "ola", "arr2", 100);
+            console.log(arr2);
+
+            var str = arr2.join(" -- ");
+            console.log(str);
+        </script>
+        
+    </head>
+    <body>
+        <h1>Curso Javascript Completo 2018</h1>
+        
+         
+        
+    
+</body></html>
